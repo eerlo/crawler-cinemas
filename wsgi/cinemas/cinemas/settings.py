@@ -102,7 +102,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '%s/atualizacao_dados.log' % os.environ[u'OPENSHIFT_LOG_DIR'],
+            'filename': '%s/atualizacao_dados.log' % os.environ.get(u'OPENSHIFT_LOG_DIR', '/tmp/'),
             'formatter': 'verbose',
         },
     },
@@ -114,3 +114,8 @@ LOGGING = {
         },
     },
 }
+
+try:
+    from localsettings import *
+except ImportError:
+    pass
