@@ -1,5 +1,5 @@
 """
-Django settings for myproject project.
+Django settings for cinemas project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -48,7 +48,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-# GETTING-STARTED: change 'myproject' to your project name:
+# GETTING-STARTED: change 'cinemas' to your project name:
 ROOT_URLCONF = 'cinemas.urls'
 
 WSGI_APPLICATION = 'cinemas.wsgi.application'
