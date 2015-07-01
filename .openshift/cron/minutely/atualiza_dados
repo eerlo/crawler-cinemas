@@ -1,0 +1,2 @@
+#!/bin/bash
+${VIRTUAL_ENV}/bin/python ${OPENSHIFT_REPO_DIR}/wsgi/cinemas/manage.py atualiza_dados
