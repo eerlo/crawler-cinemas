@@ -124,7 +124,7 @@ LOGGING = {
             'propagate': True,
         },
         'atualizacao_dados_erros': {
-            'handlers': ['mail_admins', 'error_file'],
+            'handlers': ['error_file'],
             'level': 'ERROR',
             'propagate': True,
         },

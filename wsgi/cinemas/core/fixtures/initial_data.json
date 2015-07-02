@@ -1,0 +1,64 @@
+[
+{
+    "fields": {
+        "username": "e",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": "2015-07-02T01:47:32.797",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$o7y985B29QdD$Z9XySzD2aXYjhT4sFLH3frBe0cvrHH6tt4C3MVqjPAE=",
+        "email": "e@e.com",
+        "date_joined": "2015-07-02T01:47:14.408"
+    },
+    "model": "auth.user",
+    "pk": null,
+},
+{
+    "fields": {
+        "data_criacao": "2015-07-02",
+        "slug": "rio-grande-do-sul",
+        "data_alteracao": "2015-07-02",
+        "sigla": "RS",
+        "nome": "Rio Grande do Sul"
+    },
+    "model": "core.unidadefederativa",
+    "pk": 1
+},
+{
+    "fields": {
+        "data_criacao": "2015-07-02",
+        "slug": "caxias-do-sul",
+        "data_alteracao": "2015-07-02",
+        "uf": 1,
+        "nome": "Caxias do Sul"
+    },
+    "model": "core.cidade",
+    "pk": 1
+},
+{
+    "fields": {
+        "data_criacao": "2015-07-02",
+        "cidade": 1,
+        "data_alteracao": "2015-07-02",
+        "slug": "cinepolis-caxias-do-sul",
+        "nome": "Cin\u00e9polis Caxias do Sul"
+    },
+    "model": "core.cinema",
+    "pk": 1
+},
+{
+    "fields": {
+        "data_criacao": "2015-07-02",
+        "cidade": 1,
+        "data_alteracao": "2015-07-02",
+        "slug": "gnc-caxias-do-sul",
+        "nome": "GNC Caxias do Sul"
+    },
+    "model": "core.cinema",
+    "pk": 2
+}
+]
