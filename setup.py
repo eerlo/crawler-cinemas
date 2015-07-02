@@ -16,5 +16,7 @@ setup(
     # GETTING-STARTED: set author url (your url):
     url='https://pypi.python.org/pypi/',
     # GETTING-STARTED: define required django version:
-    install_requires=['Django<=1.8', 'ipython'],
+    install_requires=['Django<=1.8', 'ipython', 'djangorestframework==3.1.3',
+                      'requests==2.7.0', 'lxml==3.4.4', 'cssselect==0.9.1',
+                      'django-filter==0.10.0'],
 )
