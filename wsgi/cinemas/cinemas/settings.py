@@ -106,6 +106,12 @@ LOGGING = {
             'filename': '%s/atualizacao_dados.log' % os.environ.get(u'OPENSHIFT_LOG_DIR', '/tmp/'),
             'formatter': 'verbose',
         },
+        'error_file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': '%s/erros_atualizacao_dados.log' % os.environ.get(u'OPENSHIFT_LOG_DIR', '/tmp/'),
+            'formatter': 'verbose',
+        },
         'mail_admins': {
             'level': 'ERROR',
             'class': 'django.utils.log.AdminEmailHandler',
@@ -118,7 +124,7 @@ LOGGING = {
             'propagate': True,
         },
         'atualizacao_dados_erros': {
-            'handlers': ['mail_admins'],
+            'handlers': ['mail_admins', 'error_file'],
             'level': 'ERROR',
             'propagate': True,
         },

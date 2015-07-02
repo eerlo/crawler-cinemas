@@ -20,8 +20,8 @@ class Command(BaseCommand):
             try:
                 novos = crawler().processar()
             except Exception, exc:
-                logger.error(exc)
-                logger_erro.error(exc)
+                logger.error(str(exc))
+                logger_erro.error(str(exc))
             else:
                 if novos:
                     logger.debug('Resultado: %s' % str(novos))
