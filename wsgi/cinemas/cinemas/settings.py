@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u'cinemas-eerlo.rhcloud.com']
 
 
 # Application definition
@@ -136,6 +136,16 @@ REST_FRAMEWORK = {
         'rest_framework.filters.DjangoFilterBackend',
     )
 }
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'erroscinemas@gmail.com'
+EMAIL_HOST_PASSWORD = 'aX9iuiokkk'
+DEFAULT_FROM_EMAIL = 'erroscinemas@gmail.com'
+DEFAULT_TO_EMAIL = 'erroscinemas@gmail.com'
+
+ADMINS = (('Eduardo Erlo', 'eduardo.erlo@gmail.com'),)
 
 try:
     from localsettings import *
