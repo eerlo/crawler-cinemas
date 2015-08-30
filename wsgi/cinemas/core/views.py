@@ -26,4 +26,5 @@ class RegistroFilmeViewSet(viewsets.ModelViewSet):
     queryset = RegistroFilme.objects.all()
     serializer_class = RegistroFilmeSerializer
     filter_backends = (filters.DjangoFilterBackend,)
+    filter_fields = (u'cinema',)
 
